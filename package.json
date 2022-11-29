@@ -1,0 +1,23 @@
+{
+  "name": "superbotchecker",
+  "version": "1.0.0",
+  "description": "Thanks for the Fireship Discord for the name.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/win20-official/SuperBotChecker.git"
+  },
+  "author": "Windows 20",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.6.0",
+    "dotenv": "^16.0.3"
+  },
+  "bugs": {
+    "url": "https://github.com/win20-official/SuperBotChecker/issues"
+  },
+  "homepage": "https://github.com/win20-official/SuperBotChecker#readme"
+}
