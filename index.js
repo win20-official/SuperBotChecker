@@ -25,7 +25,7 @@ const rest = new REST({ version: "10" }).setToken(LOGIN)
   try {
     console.log("Started refreshing application (/) commands.")
 
-    await rest.put(Routes.applicationCommands("1046460605315424366"), {
+    await rest.put(Routes.applicationCommands("APP_ID"), {
       body: commands,
     })
 
@@ -47,10 +47,12 @@ client.on("interactionCreate", async (interaction) => {
     const text = "is not a bot."
 
     if (username.bot === false) {
-      await interaction.reply(`The user ${username} ${text}`)
+      await interaction.reply(`See the DM i've sent you ${interaction.user}`)
+      await interaction.user.send(`The user ${username} ${text}`)
     } else {
       const text = "is a bot."
-      await interaction.reply(`The user ${username} ${text}`)
+      await interaction.reply(`See the DM i've sent you ${interaction.user}`)
+      await interaction.user.send(`The user ${username} ${text}`)
     }
 
   }
