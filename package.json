@@ -13,7 +13,7 @@
   "author": "Windows 20",
   "license": "MIT",
   "dependencies": {
-    "discord.js": "^14.6.0",
+    "discord.js": "^14.14.0",
     "dotenv": "^16.0.3"
   },
   "bugs": {
